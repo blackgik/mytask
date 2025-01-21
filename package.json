@@ -1,0 +1,43 @@
+{
+  "name": "kafka-todo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "nodemon",
+    "test": "nyc mocha --require ts-node/register test/**.spec.ts"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.5",
+    "@types/cors": "^2.8.17",
+    "@types/dotenv": "^8.2.3",
+    "@types/express": "^5.0.0",
+    "@types/joi": "^17.2.3",
+    "@types/kafkajs": "^1.9.0",
+    "@types/knex": "^0.16.1",
+    "@types/mocha": "^10.0.10",
+    "@types/mysql": "^2.15.26",
+    "@types/node": "^22.10.6",
+    "@types/sinon": "^17.0.3",
+    "chai": "^4.3.7",
+    "mocha": "^11.0.1",
+    "nodemon": "^3.1.9",
+    "nyc": "^17.1.0",
+    "sinon": "^19.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-async-errors": "^3.1.1",
+    "joi": "^17.13.3",
+    "kafkajs": "^2.2.4",
+    "knex": "^3.1.0",
+    "mysql": "^2.18.1"
+  }
+}
